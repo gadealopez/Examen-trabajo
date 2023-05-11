@@ -1,4 +1,5 @@
 package PaqA11;
+//GADEA LOPEZ GONZALVEZ
 
 import javax.swing.*;
 
@@ -112,23 +113,28 @@ public class Hub {
             return cont;
 
         }
+    public int calcularContenedoresPorPrioridad(JTextField prioridad){int cont = 0;
 
-
-
-        public String toString() {
-            StringBuffer s = new StringBuffer();
-
-            for (int i = 0; i < this.contenedores.length; i++) {
-                for (int j = 0; j < this.contenedores[i].length; j++) {
-                    if (this.contenedores[i][j] != null) {
-                        s.append("   O   ");
-                    } else {
-                        s.append("   L   ");
-                    }
+        for (int i = 0; i < this.contenedores.length; i++) {
+            for (int j = 0; j < this.contenedores[i].length; j++) {
+                if (this.contenedores[i][j] != null && prioridad.equals(this.contenedores[i][j].getPrioridad())) {
+                    cont++;
                 }
-                s.append("\n");
             }
-
-            return s.toString();
         }
+        return cont;
+
+    }
+
+
+
+       public String toString(int identificador,String empresaRemitente,double peso,String estadoChequeo){
+            return identificador+" "+ empresaRemitente+" "+ peso+" "+ estadoChequeo;
+
+       }
+
+
+
+
+
     }

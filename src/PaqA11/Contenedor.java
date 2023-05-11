@@ -1,4 +1,5 @@
 package PaqA11;
+//GADEA LOPEZ GONZALVEZ
 
 import javax.swing.*;
 
@@ -17,6 +18,10 @@ public class Contenedor extends JFrame {
     private JSpinner spinner1;
     private int identificador;
     private String procedencia;
+    private String empresaRemitente;
+    private double peso;
+    private String estadoChequeo;
+    private JButton ContenedorPorPrioridad;
 
     public Contenedor() {
 
@@ -125,3 +130,4 @@ public class Contenedor extends JFrame {
         return this.procedencia;
     }
 }
+

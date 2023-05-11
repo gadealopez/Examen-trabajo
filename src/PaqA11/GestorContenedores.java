@@ -1,4 +1,5 @@
 package PaqA11;
+//GADEA LOPEZ GONZALVEZ
 
 import javax.swing.*;
 
@@ -22,4 +23,5 @@ public class GestorContenedores {
     private JComboBox comboBox2;
     private JTextField textField7;
     private JCheckBox inspeccionadoEnAduanasCheckBox;
+    private JButton contenedorPorPrioridadButton;
 }
